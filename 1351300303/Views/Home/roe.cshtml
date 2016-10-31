@@ -1,9 +1,13 @@
 ﻿
 @{
     Layout = null;
+    var a = 10.5;
+    var b = 20;
+
+   
 }
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 
 <html>
 <head>
@@ -14,6 +18,7 @@
     <div> ewhjhf safg
     </div>
 
+    
     <div>
         <ul class="nav navbar-nav">
             <li>@Html.ActionLink("主页", "Index", "Home")</li>
@@ -21,8 +26,21 @@
             <li>@Html.ActionLink("联系方式", "Contact", "Home")</li>
             <li>@Html.ActionLink("roe", "roe", "Home")</li>
         </ul>
-        @Html.Partial("_LoginPartial")
-    </div>
+        <div>
+            <h1>welcome </h1>
+            <div>结果：@ViewBag.sum </div>
+            <div>@(a + b)</div>
+            <div> @( "TIME:" + DateTime.Now.ToString() )</div>
 
+        </div>
+      
+    </div>
+    <ul>
+            @for (int i = 0; i < 10; i++)
+               {
+                   < li > 元素:@(i + 1) </ li >
+                  }
+        
+    </ul>
 </body>
 </html>
