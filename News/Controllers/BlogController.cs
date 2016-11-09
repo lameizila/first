@@ -35,7 +35,7 @@ namespace News.Controllers
             return View();
         }
 
-        //public ActionResult ArticleSave(string subject, string body)
+       
         public ActionResult ArticleSave(BlogArticle model)
         {
             if (ModelState.IsValid)
